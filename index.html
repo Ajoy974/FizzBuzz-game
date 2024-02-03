@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuzzTastic Challenge</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            user-select: none;
+        }
+        body{
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1006%26quot%3b)' fill='none'%3e%3cpath d='M935 230L934 -62' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1007%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1129 308L1128 477' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1008%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1279 121L1278 458' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1008%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M819 168L818 311' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1007%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1363 331L1362 30' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1007%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1038 365L1037 22' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1007%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M893 299L892 617' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1008%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M865 266L864 640' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1007%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M958 288L957 -11' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1008%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M710 59L709 -308' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1008%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1230 201L1229 350' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1007%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1201 17L1200 275' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1007%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M900 259L899 -94' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1008%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1065 348L1064 531' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1008%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1411 542L1410 730' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1007%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M831 360L830 597' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1008%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1383 250L1382 102' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1007%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M480 374L479 150' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1007%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1359 530L1358 365' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1007%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1152 447L1151 132' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1007%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M539 80L538 -228' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1008%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1208 160L1207 536' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1007%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M904 517L903 232' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1008%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1194 503L1193 735' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1008%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M829 359L828 98' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1007%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1227 118L1226 -279' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1008%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1267 183L1266 -30' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1007%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1097 556L1096 770' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1007%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M400 254L399 485' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1008%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M320 133L319 499' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1008%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M27 547L26 276' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1007%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M40 98L39 -136' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1007%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M973 130L972 397' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1008%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M460 50L459 464' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1007%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1223 21L1222 329' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1008%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M361 132L360 -213' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1007%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1006'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='0%25' y1='100%25' x2='0%25' y2='0%25' id='SvgjsLinearGradient1007'%3e%3cstop stop-color='rgba(28%2c 83%2c 142%2c 0)' offset='0'%3e%3c/stop%3e%3cstop stop-color='%231c538e' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='0%25' y1='0%25' x2='0%25' y2='100%25' id='SvgjsLinearGradient1008'%3e%3cstop stop-color='rgba(28%2c 83%2c 142%2c 0)' offset='0'%3e%3c/stop%3e%3cstop stop-color='%231c538e' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+            
+        }
+        .main-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            /* background: #eef; */
+            flex-direction: column;
+        }
+
+        input {
+            width: 250px;
+            position: relative;
+            cursor: text;
+            font-size: 14px;
+            line-height: 20px;
+            padding: 0 16px;
+            height: 48px;
+            background-color: #fff;
+            border: 1px solid #d6d6e7;
+            border-radius: 3px;
+            color: rgb(35, 38, 59);
+            box-shadow: inset 0 1px 4px 0 rgb(119 122 175 / 30%);
+            overflow: hidden;
+            transition: all 100ms ease-in-out;
+
+            :focus {
+                border-color: #3c4fe0;
+                box-shadow: 0 1px 0 0 rgb(35 38 59 / 5%);
+            }
+
+
+        }
+
+
+        #h2 {
+            margin: 10px;
+            font-family: "Protest Revolution", sans-serif;
+        }
+
+        h1 {
+            position: absolute;
+            top: 10%;
+            font-family: Georgia, serif;
+            font-size: 26px;
+            letter-spacing: 6px;
+            word-spacing: 6px;
+            color: #000000;
+            font-weight: 700;
+            text-decoration: none;
+            font-style: italic;
+            font-variant: normal;
+            text-transform: capitalize;
+        }
+
+        /* CSS */
+        .button-30 {
+            align-items: center;
+            appearance: none;
+            background-color: #FCFCFD;
+            border-radius: 4px;
+            border-width: 0;
+            box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+            box-sizing: border-box;
+            color: #36395A;
+            cursor: pointer;
+            display: inline-flex;
+            font-family: "JetBrains Mono", monospace;
+            height: 48px;
+            justify-content: center;
+            line-height: 1;
+            list-style: none;
+            overflow: hidden;
+            padding-left: 16px;
+            padding-right: 16px;
+            position: relative;
+            text-align: left;
+            text-decoration: none;
+            transition: box-shadow .15s, transform .15s;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            white-space: nowrap;
+            will-change: box-shadow, transform;
+            font-size: 18px;
+        }
+
+        .button-30:focus {
+            box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+        }
+
+        .button-30:hover {
+            box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+            transform: translateY(-2px);
+        }
+
+        .button-30:active {
+            box-shadow: #D6D6E7 0 3px 7px inset;
+            transform: translateY(2px);
+        }
+
+        .input-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 500px;
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main-div">
+        <h1>BuzzTastic Challenge</h1>
+        <div class="input-box">
+            <input type="number" id="inpt" placeholder="Check Number" value="50">
+            <button class="button-30" onclick="check()">Check FizzBuzz</button>
+        </div>
+        <h2 id="h2"></h2>
+    </div>
+    <script>
+        function check() {
+            var i = document.getElementById("inpt").value;
+
+            if (i % 3 === 0 && i % 5 === 0) {
+                document.getElementById("h2").innerHTML = "FizzBuzz";
+            }
+            else if (i % 3 === 0) {
+                document.getElementById("h2").innerHTML = "Buzz";
+            } else if (i % 5 === 0) {
+                document.getElementById("h2").innerHTML = "Fizz";
+            } else {
+                document.getElementById("h2").innerHTML = i;
+            }
+        }
+
+    </script>
+</body>
+
+</html>
